@@ -1,0 +1,29 @@
+{
+  "name": "project3_shoppinglist",
+  "version": "1.0.0",
+  "description": "Shopping list project for Bootcamp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chstrcpprpt/project3_ShoppingList.git"
+  },
+  "author": "CA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chstrcpprpt/project3_ShoppingList/issues"
+  },
+  "homepage": "https://github.com/chstrcpprpt/project3_ShoppingList#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
