@@ -9,8 +9,9 @@ import store from "./store";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import ShoppingListFruitAndVeg from "./components/ShoppingListFruitAndVeg";
-import ShoppingListFridge from "./components/ShoppingListFridge";
+import FruitAndVeg from "./components/FruitAndVeg";
+import Fridge from "./components/Fridge";
+import Pantry from "./components/Pantry";
 
 function App() {
   return (
@@ -21,17 +22,21 @@ function App() {
         <NavbarApp />
         <Container>
           <ItemModal />
-          <ShoppingList />
           <div
-          style={{margin: "1rem 0"}}>
+          style={{margin: "0 0 1rem 0"}}>
             Fruit & veg
           </div>
-          <ShoppingListFruitAndVeg />
+          <FruitAndVeg />
           <div
           style={{margin: "1rem 0"}}>
             Fridge
           </div>
-          <ShoppingListFridge />
+          <Fridge />
+          <div
+          style={{margin: "1rem 0"}}>
+            Pantry
+          </div>
+          <Pantry />
         </Container>
       </div>
     </Provider>
