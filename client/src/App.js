@@ -9,6 +9,8 @@ import store from "./store";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import ShoppingListFruitAndVeg from "./components/ShoppingListFruitAndVeg";
+import ShoppingListFridge from "./components/ShoppingListFridge";
 
 function App() {
   return (
@@ -20,6 +22,16 @@ function App() {
         <Container>
           <ItemModal />
           <ShoppingList />
+          <div
+          style={{margin: "1rem 0"}}>
+            Fruit & veg
+          </div>
+          <ShoppingListFruitAndVeg />
+          <div
+          style={{margin: "1rem 0"}}>
+            Fridge
+          </div>
+          <ShoppingListFridge />
         </Container>
       </div>
     </Provider>
