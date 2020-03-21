@@ -25,14 +25,14 @@ class NavbarApp extends Component {
   render() {
     return (
       <div>
-        <Navbar color="dark" dark expand="sm" className="mb-5">
-          <Container>
-            <NavbarBrand href="/">Shopping List</NavbarBrand>
+        <Navbar expand="sm" className="mb-5 nav-bar">
+          <Container className="nav-container">
+            <NavbarBrand href="/" className="nav-bar-logo">Shopping List</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="https://github.com/chstrcpprpt">Github</NavLink>
+                  <NavLink className="nav-bar-link" href="https://github.com/chstrcpprpt">Github</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

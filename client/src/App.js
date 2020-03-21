@@ -13,7 +13,9 @@ import "./App.css";
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
+      <div 
+        className="App" 
+        style={{backgroundColor: "lavender", minHeight: "100vh"}}>
         <NavbarApp />
         <Container>
           <ItemModal />
