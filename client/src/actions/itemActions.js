@@ -13,11 +13,15 @@ export const getItems = () => dispatch => {
     )
 };
 
-export const deleteItem = (id) => {
-  return {
-    type: DELETE_ITEM,
-    payload: id
-  };
+export const deleteItem = (id) => dispatch => {
+  axios
+    .delete(`api/items/${id}`)
+    .then(res =>
+      dispatch({
+        type: DELETE_ITEM,
+        payload: id
+      })  
+    )
 };
 
 export const addItem = (item) => dispatch => {
